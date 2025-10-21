@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa História de Amor</title>
+    <!-- Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts para uma aparência delicada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFF8F8;
+            /* Um fundo rosa/vermelho bem claro */
+        }
+        
+        h1,
+        h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Estilo para as caixas do contador */
+        
+        .timer-box {
+            background-color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #FEE2E2;
+            /* Borda vermelha clara */
+        }
+        
+        .timer-value {
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: #EF4444;
+            /* Cor vermelha (red-500 do Tailwind) */
+        }
+        
+        .timer-label {
+            font-size: 0.875rem;
+            color: #71717A;
+            /* Cor cinza (zinc-500 do Tailwind) */
+            margin-top: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        /* Animação de entrada suave */
+        
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="text-zinc-700">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
+        <!-- Seção do Cabeçalho -->
+        <header class="text-center my-12 fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold text-red-500">Para o Amor da Minha Vida</h1>
+            <p class="mt-4 text-lg text-zinc-600">Uma pequena lembrança de tudo que construímos juntos.</p>
+        </header>
+
+        <!-- Contador de Tempo Juntos -->
+        <section id="counter" class="my-16 fade-in" style="animation-delay: 0.2s;">
+            <h2 class="text-center text-3xl text-red-500 mb-8">Estamos Juntos Há...</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
+                <div class="timer-box">
+                    <span id="years" class="timer-value">0</span>
+                    <p class="timer-label">Anos</p>
+                </div>
+                <div class="timer-box">
+                    <span id="months" class="timer-value">0</span>
+                    <p class="timer-label">Meses</p>
+                </div>
+                <div class="timer-box">
+                    <span id="days" class="timer-value">0</span>
+                    <p class="timer-label">Dias</p>
+                </div>
+                <div class="timer-box">
+                    <span id="hours" class="timer-value">0</span>
+                    <p class="timer-label">Horas</p>
+                </div>
+                <div class="timer-box">
+                    <span id="minutes" class="timer-value">0</span>
+                    <p class="timer-label">Minutos</p>
+                </div>
+                <div class="timer-box">
+                    <span id="seconds" class="timer-value">0</span>
+                    <p class="timer-label">Segundos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Texto / Carta -->
+        <section class="my-16 bg-white p-8 rounded-lg shadow-sm border border-red-100 fade-in" style="animation-delay: 0.4s;">
+            <h2 class="text-3xl text-red-500 mb-4">Uma Carta Para Você</h2>
+            <p class="text-zinc-600 leading-relaxed">
+                Minha Princesa,
+            </p>
+            <p class="mt-4 text-zinc-600 leading-relaxed">
+                Me sinto muito bem ao seu lado, a minha vida faz mais sentido ao se lado. Você me ensinou o que é amar, desde antes eu achei que nunca ia conseguir amar alguém, mas ai você chegou. Você é a baixinha que consegue me deixar nas alturas, amo seu sorriso solto
+                e sincero. Você é como a lua e as estrelas, lindas e brilhantes.
+
+            </p>
+            <p class="mt-4 text-zinc-600 leading-relaxed">
+                Meu amor, saiba que você é meu lugar favorito no mundo. Eu amo tudo em você. Obrigado por me fazer feliz! Você faz tudo valer a pena 🫀
+                <br> Batman 🤍
+            </p>
+        </section>
+
+        <!-- Galeria de Fotos -->
+        <section class="my-16 fade-in" style="animation-delay: 0.6s;">
+            <h2 class="text-center text-3xl text-red-500 mb-8">Nossas Memórias</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Imagem 1 -->
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-red-100 transform hover:scale-105 transition-transform duration-300">
+                    <img src="/amor/img/b1.jpg" alt="Nossa primeira foto" class="rounded-md w-full h-auto">
+                    <p class="text-center mt-2 text-zinc-600">O início de tudo</p>
+                </div>
+                <!-- Imagem 2 -->
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-red-100 transform hover:scale-105 transition-transform duration-300">
+                    <img src="/amor/img/b2.jpg" alt="Encontro inesquecivel" class="rounded-md w-full h-auto">
+                    <p class="text-center mt-2 text-zinc-600">Date Perfeito</p>
+                </div>
+                <!-- Imagem 3 -->
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-red-100 transform hover:scale-105 transition-transform duration-300">
+                    <img src="/amor/img/b3.jpg" alt="Um dia qualquer" class="rounded-md w-full h-auto">
+                    <p class="text-center mt-2 text-zinc-600">Momentos simples e perfeitos</p>
+                </div>
+                <!-- Imagem 4 -->
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-red-100 transform hover:scale-105 transition-transform duration-300">
+                    <img src="/amor/img/b4.jpg" alt="Sempre juntos" class="rounded-md w-full h-auto">
+                    <p class="text-center mt-2 text-zinc-600">Sempre juntos</p>
+                </div>
+                <!-- Imagem 5 -->
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-red-100 transform hover:scale-105 transition-transform duration-300">
+                    <img src="/amor/img/b5.jpg" alt="Aniversário" class="rounded-md w-full h-auto">
+                    <p class="text-center mt-2 text-zinc-600">Momentos de Descontrair</p>
+                </div>
+                <!-- Imagem 6 -->
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-red-100 transform hover:scale-105 transition-transform duration-300">
+                    <img src="/amor/img/b6.jpg" alt="Amor" class="rounded-md w-full h-auto">
+                    <p class="text-center mt-2 text-zinc-600">Nosso amor</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="text-center py-8 text-zinc-500">
+            <p>Feito com ❤️ para a pessoa mais incrível do mundo.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- CONFIGURAÇÃO ---
+            // Defina a data de início do namoro aqui.
+            // Formato: 'AAAA-MM-DDTHH:mm:ss'
+            const startDate = new Date('2024-12-09T00:00:00');
+
+            // Seleciona os elementos do HTML que vão mostrar o tempo
+            const yearsElem = document.getElementById('years');
+            const monthsElem = document.getElementById('months');
+            const daysElem = document.getElementById('days');
+            const hoursElem = document.getElementById('hours');
+            const minutesElem = document.getElementById('minutes');
+            const secondsElem = document.getElementById('seconds');
+
+            function updateCounter() {
+                const now = new Date();
+
+                // --- Cálculo de horas, minutos e segundos ---
+                let totalSeconds = Math.floor((now - startDate) / 1000);
+                let seconds = totalSeconds % 60;
+                let minutes = Math.floor(totalSeconds / 60) % 60;
+                let hours = Math.floor(totalSeconds / 3600) % 24;
+
+                // --- Cálculo complexo para anos, meses e dias ---
+                let years = now.getFullYear() - startDate.getFullYear();
+                let months = now.getMonth() - startDate.getMonth();
+                let days = now.getDate() - startDate.getDate();
+
+                // Ajustes para casos onde o dia ou mês atual é menor que o de início
+                if (days < 0) {
+                    months--;
+                    const lastDayOfPreviousMonth = new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+                    days += lastDayOfPreviousMonth;
+                }
+                if (months < 0) {
+                    years--;
+                    months += 12;
+                }
+
+                // Atualiza os valores no site
+                yearsElem.textContent = years;
+                monthsElem.textContent = months;
+                daysElem.textContent = days;
+                hoursElem.textContent = String(hours).padStart(2, '0');
+                minutesElem.textContent = String(minutes).padStart(2, '0');
+                secondsElem.textContent = String(seconds).padStart(2, '0');
+            }
+
+            // Atualiza o contador imediatamente ao carregar a página e depois a cada segundo
+            updateCounter();
+            setInterval(updateCounter, 1000);
+        });
+    </script>
+
+</body>
+
+</html>
